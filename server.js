@@ -11,7 +11,7 @@ mongoose.connect(mongoURI, {}, () => {
     log("connected to mongodb");
 });
 const app = express();
-const PORT = process.env.PORT ?? 2000;
+const PORT = 2000;
 
 app.use(morgan("tiny"));
 app.use(methodOverride("_method"));
